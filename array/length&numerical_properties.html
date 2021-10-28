@@ -42,5 +42,17 @@
             console.log(fruits[8]);
 // undefined
         </script>
+
+
+        <h1>Decreasing the length property does, however, delete elements.</h1>
+        <script>
+            fruits.length = 2;
+            console.log(Object.keys(fruits));
+// (2) ['0', '1']
+            console.log(fruits.length);
+// 2
+            console.log(fruits);
+// (2) ['banana', 'apple']
+        </script>
     </body>
 </html>
