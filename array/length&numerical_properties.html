@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Relationship between length and numerical properties</h1>
+        <script>
+            const fruits = [];
+            fruits.push('banana', 'apple', 'peach');
+            console.log(fruits.length);
+// 3
+        </script>
+        <br>
+
+
+        <p>When setting a property on a JavaScript array when the property is a valid array index
+            and that index is outside the current bounds of the array, the engine will update
+            the array's length property accordingly.
+        </p>
+        <script>
+            fruits[5] = "mango";
+            console.log(fruits[5]);
+// Mango
+            console.log(Object.keys(fruits));
+// (4) ['0', '1', '2', '5']
+            console.log(fruits.length);
+// 6    
+            console.log(fruits);
+// (6) ['banana', 'apple', 'peach', …, 'mango']
+        </script>
+        <br>
+
+
+        <h1>Increasing the length:</h1>
+        <script>
+            fruits.length = 10;
+            console.log(fruits);
+// (10) ['banana', 'apple', 'peach', empty x 2, 'mango', empty x 4]
+            console.log(Object.keys(fruits))
+// (4) ['0', '1', '2', '5']
+            console.log(fruits.length);
+// 10
+            console.log(fruits[8]);
+// undefined
+        </script>
+    </body>
+</html>
