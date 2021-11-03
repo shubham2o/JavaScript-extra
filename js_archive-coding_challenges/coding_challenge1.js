@@ -19,11 +19,13 @@ console.log(markHigherBMI);
 // TEST
 // DATA
 // 2
-
 let markMass2 = 95;
 let markHeight2 = 188;
 let johnMass2 = 85;
-let markHieght2 = 176;
+let johnHeight2 = 176;
 
 let markBMI2 = markMass2 / markHeight2 ** 2 / (markHeight2 * markHeight2);
 console.log(markBMI2);
+
+let johnBMI2 = johnMass2 / johnHeight2 ** 2 / (johnHeight2 * johnHeight2);
+console.log(johnBMI2);
