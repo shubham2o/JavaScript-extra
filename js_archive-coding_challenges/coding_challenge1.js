@@ -16,6 +16,7 @@ let markHigherBMI = markBMI > johnBMI;
 console.log(markHigherBMI);
 
 
+
 // TEST
 // DATA
 // 2
