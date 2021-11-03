@@ -29,3 +29,6 @@ console.log(markBMI2);
 
 let johnBMI2 = johnMass2 / johnHeight2 ** 2 / (johnHeight2 * johnHeight2);
 console.log(johnBMI2);
+
+let markHigherBMI2 = markBMI2 > johnBMI2;
+console.log(markHigherBMI2);
