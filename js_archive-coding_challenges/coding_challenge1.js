@@ -2,14 +2,14 @@
 // DATA 
 // 1
 const markMass = 78;
-const markHeight = 169;
+const markHeight = 1.69;
 const johnMass = 92;
-const johnHeight = 195;
+const johnHeight = 1.95;
 
-const markBMI = markMass / markHeight ** 2 / (markHeight * markHeight);
+const markBMI = markMass / markHeight ** 2;
 console.log(markBMI);
 
-const johnBMI = johnMass / johnHeight ** 2 / (johnHeight * johnHeight);
+const johnBMI = johnMass / (johnHeight * johnHeight);
 console.log(johnBMI)
 
 const markHigherBMI = markBMI > johnBMI;
