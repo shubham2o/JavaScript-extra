@@ -4,4 +4,5 @@ function fruitProcessor(apples, oranges) {
     console.log(juice);
     return juice;
 }
-fruitProcessor(3, 5);
+const mixJuice = fruitProcessor(3, 5);
+console.log(mixJuice);
