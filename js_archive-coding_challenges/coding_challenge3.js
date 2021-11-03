@@ -49,3 +49,105 @@ let dataBonus2Koalas3 = 106;
 
 let avgDataBonus2Koalas = (dataBonus2Koalas1 + dataBonus2Koalas2 + dataBonus2Koalas3) / 3;
 console.log(`6> avgDataBonus2Koalas ~ ${avgDataBonus2Koalas}`);
+
+
+
+// AVG - 
+// Dolphins and Koalas
+if (avgDolphinsData1 > avgKoalasData1) {
+    console.log(`Dolphins are the winners!`);
+}
+else if(avgDolphinsData1 < avgKoalasData1) {
+    console.log(`Koalas are the winners!`);
+}
+else {
+    console.log(`DRAW!`);
+}
+
+
+
+// Data Bonus 1 ~ 
+// Dolphins1 and Koalas1
+if (dataBonus1Dolphins1 > 100 || dataBonus1Koalas1 > 100){
+    if (dataBonus1Dolphins1 > dataBonus1Koalas1) {
+        console.log(`Dolphins are the winners!`);
+    }
+    else if (dataBonus1Dolphins1 < dataBonus1Koalas1) {
+        console.log(`Koalas are the winners!`);
+    }
+}
+else {
+    console.log(`DRAW!`);
+}
+
+// Data Bonus 1 ~ 
+// Dolphins2 and Koalas2
+if (dataBonus1Dolphins2 > 100 || dataBonus1Koalas2 > 100){
+    if (dataBonus1Dolphins2 > dataBonus1Koalas2) {
+        console.log(`Dolphins are the winners!`);
+    }
+    else if (dataBonus1Dolphins2 < dataBonus1Koalas2) {
+        console.log(`Koalas are the winners!`);
+    }
+}
+else {
+    console.log(`DRAW!`);
+}
+
+// Data Bonus 1 ~ 
+// Dolphins3 and Koalas3
+if (dataBonus1Dolphins3 > 100 || dataBonus1Koalas3 > 100){
+    if (dataBonus1Dolphins3 > dataBonus1Koalas3) {
+        console.log(`Dolphins are the winners!`);
+    }
+    else if (dataBonus1Dolphins3 < dataBonus1Koalas3) {
+        console.log(`Koalas are the winners!`);
+    }
+}
+else {
+    console.log(`DRAW!`);
+}
+
+
+
+// Data Bonus 2 ~ 
+// Dolphins1 and Koalas1
+if (dataBonus2Dolphins1 > 100 || dataBonus2Koalas1 > 100){
+    if (dataBonus2Dolphins1 > dataBonus2Koalas1) {
+        console.log(`Dolphins are the winners!`);
+    }
+    else if (dataBonus2Dolphins1 < dataBonus2Koalas1) {
+        console.log(`Koalas are the winners!`);
+    }
+}
+else {
+    console.log(`DRAW!`);
+}
+
+// Data Bonus 2 ~ 
+// Dolphins2 and Koalas2
+if (dataBonus2Dolphins2 > 100 || dataBonus2Koalas2 > 100){
+    if (dataBonus2Dolphins2 > dataBonus2Koalas2) {
+        console.log(`Dolphins are the winners!`);
+    }
+    else if (dataBonus2Dolphins2 < dataBonus2Koalas2) {
+        console.log(`Koalas are the winners!`);
+    }
+}
+else {
+    console.log(`DRAW!`);
+}
+
+// Data Bonus 2 ~ 
+// Dolphins3 and Koalas3
+if (dataBonus2Dolphins3 > 100 || dataBonus2Koalas3 > 100){
+    if (dataBonus2Dolphins3 > dataBonus2Koalas3) {
+        console.log(`Dolphins are the winners!`);
+    }
+    else if (dataBonus2Dolphins3 < dataBonus2Koalas3) {
+        console.log(`Koalas are the winners!`);
+    }
+}
+else {
+    console.log(`DRAW!`);
+}
