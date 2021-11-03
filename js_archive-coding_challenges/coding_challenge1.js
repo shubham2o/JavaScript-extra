@@ -1,18 +1,18 @@
 // TEST 
 // DATA 
 // 1
-let markMass = 78;
-let markHeight = 169;
-let johnMass = 92;
-let johnHeight = 195;
+const markMass = 78;
+const markHeight = 169;
+const johnMass = 92;
+const johnHeight = 195;
 
-let markBMI = markMass / markHeight ** 2 / (markHeight * markHeight);
+const markBMI = markMass / markHeight ** 2 / (markHeight * markHeight);
 console.log(markBMI);
 
-let johnBMI = johnMass / johnHeight ** 2 / (johnHeight * johnHeight);
+const johnBMI = johnMass / johnHeight ** 2 / (johnHeight * johnHeight);
 console.log(johnBMI)
 
-let markHigherBMI = markBMI > johnBMI;
+const markHigherBMI = markBMI > johnBMI;
 console.log(markHigherBMI);
 
 
@@ -20,16 +20,16 @@ console.log(markHigherBMI);
 // TEST
 // DATA
 // 2
-let markMass2 = 95;
-let markHeight2 = 188;
-let johnMass2 = 85;
-let johnHeight2 = 176;
+const markMass2 = 95;
+const markHeight2 = 188;
+const johnMass2 = 85;
+const johnHeight2 = 176;
 
-let markBMI2 = markMass2 / markHeight2 ** 2 / (markHeight2 * markHeight2);
+const markBMI2 = markMass2 / markHeight2 ** 2 / (markHeight2 * markHeight2);
 console.log(markBMI2);
 
-let johnBMI2 = johnMass2 / johnHeight2 ** 2 / (johnHeight2 * johnHeight2);
+const johnBMI2 = johnMass2 / johnHeight2 ** 2 / (johnHeight2 * johnHeight2);
 console.log(johnBMI2);
 
-let markHigherBMI2 = markBMI2 > johnBMI2;
+const markHigherBMI2 = markBMI2 > johnBMI2;
 console.log(markHigherBMI2);
