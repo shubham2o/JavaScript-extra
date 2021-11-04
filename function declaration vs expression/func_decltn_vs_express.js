@@ -35,3 +35,4 @@ const calcAge4 = function(birthYear4) {
     return 2037 - birthYear4;
 }
 console.log(age4);
+// This happens because of the process called hoisting.
