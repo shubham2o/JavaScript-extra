@@ -1,3 +1,4 @@
+// METHOD 1
 const shubham = {
     firstName : 'Shubham',
     lastName : 'Sharma',
@@ -15,6 +16,7 @@ console.log(shubham['calcAge'](2000));
 
 
 
+// METHOD 2
 const shubham1 = {
     oneFirstName : 'Shubham',
     oneLastName : 'Sharma',
@@ -32,3 +34,21 @@ const shubham1 = {
 };
 
 console.log(shubham1.oneCalcAge());
+
+
+
+// METHOD 3
+const shubham2 = {
+    twoFirstName : 'Shubham',
+    twoLastName : 'Sharma',
+    twoBirthYear : 2000,
+    twoJob : 'Student',
+    twoFriends : ['Stephen', 'Klay', 'Dray'],
+    twoHasDriversLicense : true,
+    twoCalcAge : function() {
+        this.age = 2037 - this.twoBirthYear
+        return this.age;
+    }
+};
+
+console.log(shubham2.twoCalcAge());
