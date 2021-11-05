@@ -18,9 +18,9 @@ function checkWinner(avgDolphins, avgKoalas) {
     }
 }
 
-/* Used let keyword to declare variables instead 
-of const or var, so that it can override its 
-value in future. */
+/* Used let keyword to declare variables 
+instead of const or var, so that it can 
+override its value in future. */
 let avgDolphins = calcAverage(44, 23, 71);
 let avgKoalas = calcAverage(65, 54, 49);
 
