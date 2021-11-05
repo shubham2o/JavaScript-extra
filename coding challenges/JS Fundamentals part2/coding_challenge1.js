@@ -1,5 +1,3 @@
-/* TEST 
-DATA 1 */
 const calcAverage = (score1, score2, score3) => {
     const totalScore = score1 + score2 + score3;
     const average = totalScore / 3;
@@ -18,7 +16,11 @@ function checkWinner(avgDolphins, avgKoalas) {
     }
 }
 
-/* Used let keyword to declare variables 
+
+
+/* TEST 
+DATA 1 ~ 
+Used let keyword to declare variables 
 instead of const or var, so that it can 
 override its value in future. */
 let avgDolphins = calcAverage(44, 23, 71);
