@@ -1,6 +1,6 @@
 // TEST 
 // DATA 1
-let calcAverage = (score1, score2, score3) => {
+const calcAverage = (score1, score2, score3) => {
     const totalScore = score1 + score2 + score3;
     const average = totalScore / 3;
     return average;
@@ -22,3 +22,12 @@ const avgDolphins = calcAverage(44, 23, 71);
 const avgKoalas = calcAverage(65, 54, 49);
 
 checkWinner(avgDolphins, avgKoalas);
+
+
+
+// TEST 
+// DATA 2
+let avgDolphins1 = calcAverage(85, 54, 41);
+let avgKoalas1 = calcAverage(23, 34, 27);
+
+checkWinner(avgDolphins1, avgKoalas1);
