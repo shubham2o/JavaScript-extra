@@ -18,16 +18,21 @@ function checkWinner(avgDolphins, avgKoalas) {
     }
 }
 
-const avgDolphins = calcAverage(44, 23, 71);
-const avgKoalas = calcAverage(65, 54, 49);
+/* Used let keyword to declare variables instead 
+of const or var, so that it can override its 
+value in future. */
+let avgDolphins = calcAverage(44, 23, 71);
+let avgKoalas = calcAverage(65, 54, 49);
 
 checkWinner(avgDolphins, avgKoalas);
 
 
 
-// TEST 
-// DATA 2
-let avgDolphins1 = calcAverage(85, 54, 41);
-let avgKoalas1 = calcAverage(23, 34, 27);
+/* TEST 
+DATA 2 ~ 
+Old variables are overriden by not creating new 
+variables using let, const or var keyword. */
+avgDolphins = calcAverage(85, 54, 41);
+avgKoalas = calcAverage(23, 34, 27);
 
-checkWinner(avgDolphins1, avgKoalas1);
+checkWinner(avgDolphins, avgKoalas);
