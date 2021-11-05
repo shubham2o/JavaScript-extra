@@ -1,5 +1,5 @@
-// TEST 
-// DATA 1
+/* TEST 
+DATA 1 */
 const calcAverage = (score1, score2, score3) => {
     const totalScore = score1 + score2 + score3;
     const average = totalScore / 3;
