@@ -1,4 +1,4 @@
-/*  TEST DATA 
+/* TEST DATA 
 passed using array and for loop. */
 let bills = [125, 555, 44, 50, 10, 100, 1000];
 let tips;
@@ -24,8 +24,8 @@ for (let i = 0; i <= bills.length - 1; i++) {
 
 
 
-  TEST DATA 
-passed using array and expression function method
+/* TEST DATA 
+passed using array and expression function method. */
 const calcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? 
     bill * 0.15 : 
@@ -63,7 +63,7 @@ console.log(totalAmount[6]);
 
 
  TEST DATA 
-passed using array and arrow function method
+passed using array and arrow function method 
 const calcTip1 = bill => 
 bill >= 50 && bill <= 300 ? 
 bill * 0.15 : 
