@@ -29,3 +29,6 @@ console.log(shubham['friends']);
 const monkey = 'Name';
 console.log(shubham['first' + monkey]);
 console.log(shubham['last' + monkey]);
+
+const interestedIn = prompt (`What do you want to know about Shubham? Choose between firstName, lastName, age, job, and friends`);
+console.log(shubham[interestedIn]);
