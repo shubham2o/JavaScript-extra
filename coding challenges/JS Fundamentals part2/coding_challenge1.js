@@ -14,7 +14,7 @@ function checkWinner(avgDolphins, avgKoalas) {
         console.log(`Koalas win. (${avgKoalas} vs ${avgDolphins})`);
     }
     else {
-        console.log(`DRAW! Both team wins.`)
+        console.log(`DRAW! No team wins...`)
     }
 }
 
