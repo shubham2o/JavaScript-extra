@@ -6,11 +6,12 @@ const shubham = {
     friends : ['Stephen', 'Klay', 'Dray'],
     hasDriversLicense : true,
     calcAge : function(birthYear) {
-        return 2037 - 2000;
+        return 2037 - birthYear;
     }
 };
 
-console.log(shubham.calcAge());
+console.log(shubham.calcAge(2000));
+console.log(shubham['calcAge'](2000));
 
 
 
@@ -25,7 +26,8 @@ const shubham1 = {
         console.log(this);
         console.log(this.oneFirstName);
         console.log(this.oneLastName);
-        return 2037 - this.birthYear;
+        console.log(this.oneFriends);
+        return 2037 - this.oneBirthYear;
     }
 };
 
