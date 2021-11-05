@@ -16,6 +16,7 @@ console.log("Method 1 ~ " + shubham['calcAge'](2000));
 
 
 
+// METHOD 2
 const shubham1 = {
     oneFirstName : 'Shubham',
     oneLastName : 'Sharma',
