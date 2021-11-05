@@ -11,12 +11,11 @@ const shubham = {
     }
 };
 
-console.log(shubham.calcAge(2000));
-console.log(shubham['calcAge'](2000));
+console.log("Method 1 ~ " + shubham.calcAge(2000));
+console.log("Method 1 ~ " + shubham['calcAge'](2000));
 
 
 
-// METHOD 2
 const shubham1 = {
     oneFirstName : 'Shubham',
     oneLastName : 'Sharma',
@@ -33,11 +32,10 @@ const shubham1 = {
     }
 };
 
-console.log(shubham1.oneCalcAge());
+console.log("Method 2 ~ " + shubham1.oneCalcAge());
 
 
 
-// METHOD 3
 const shubham2 = {
     twoFirstName : 'Shubham',
     twoLastName : 'Sharma',
@@ -46,9 +44,10 @@ const shubham2 = {
     twoFriends : ['Stephen', 'Klay', 'Dray'],
     twoHasDriversLicense : true,
     twoCalcAge : function() {
-        this.age = 2037 - this.twoBirthYear
+        this.age = 2037 - this.twoBirthYear;
         return this.age;
     }
 };
 
-console.log(shubham2.twoCalcAge());
+console.log("Method 3 ~ " + shubham2.twoCalcAge());
+console.log("Method 3 ~ " + shubham2.age);
