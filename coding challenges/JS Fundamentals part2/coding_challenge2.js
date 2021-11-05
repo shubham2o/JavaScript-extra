@@ -62,8 +62,8 @@ console.log(totalAmount[6]);
 
 
 
- TEST DATA 
-passed using array and arrow function method 
+/* TEST DATA 
+passed using array and arrow function method. */
 const calcTip1 = bill => 
 bill >= 50 && bill <= 300 ? 
 bill * 0.15 : 
