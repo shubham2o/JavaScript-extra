@@ -5,8 +5,8 @@ let isIsland = false;
 let language = 'Hindi';
 const capital = 'Delhi';
 
-language = 'English';
 isIsland = true;
+language = 'English';
 
 console.log(country);
 console.log(continent);
