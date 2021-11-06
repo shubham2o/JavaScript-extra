@@ -1,2 +1,2 @@
 let isIsland = 'false';
-let variable;
+let language;
