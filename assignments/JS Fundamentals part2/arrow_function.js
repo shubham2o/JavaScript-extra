@@ -1,6 +1,7 @@
 // ARROW FUNCTION EXPRESSION
 let population = 7900;
-let percentageOfWorld3 = countryPopulation => (countryPopulation / population) * 100;
+let percentageOfWorld3 = (countryPopulation) =>
+  (countryPopulation / population) * 100;
 
 console.log(`
 Arrow Function Expression
