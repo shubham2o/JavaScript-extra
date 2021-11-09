@@ -1,11 +1,12 @@
 // Test Data 1
+
 const temperature1 = [17, 21, 23];
 
 console.log(`1 ~~~~~~~~~~> 
 ${temperature1[0]}℃ in 1 days ... ${temperature1[1]}℃ in 2 days ... ${temperature1[2]}℃ in 3 days ...
 `);
 
-const printForecast = function (arr) {
+const printForecast1 = function (arr) {
   let str = "";
   for (let i = 0; i < arr.length; i++) {
     str = str + `${arr[i]}℃ in ${i + 1} days ... `;
@@ -13,9 +14,10 @@ const printForecast = function (arr) {
   console.log(str);
 };
 
-printForecast(temperature1);
+printForecast1(temperature1);
 
 // Test Data 2
+
 const temperature2 = [12, 5, -5, 0, 4];
 
 console.log(`2 ~~~~~~~~~~> 
