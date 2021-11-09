@@ -11,4 +11,5 @@ const printForecast = function (arr) {
   }
   console.log(str);
 };
+
 printForecast(temperature);
