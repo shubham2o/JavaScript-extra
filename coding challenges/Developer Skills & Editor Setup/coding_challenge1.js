@@ -21,7 +21,7 @@ printForecast1(temperature1);
 const temperature2 = [12, 5, -5, 0, 4];
 
 console.log(`2 ~~~~~~~~~~> 
-${temperature2[0]}℃ in 1 days ... ${temperature2[1]}℃ in 2 days ... ${temperature2[2]}℃ in 3 days ... ${temperature2[3]}℃ in 3 days ... ${temperature2[4]}℃ in 3 days ...
+${temperature2[0]}℃ in 1 days ... ${temperature2[1]}℃ in 2 days ... ${temperature2[2]}℃ in 3 days ... ${temperature2[3]}℃ in 4 days ... ${temperature2[4]}℃ in 5 days ...
 `);
 
 const printForecast2 = function (arr2) {
