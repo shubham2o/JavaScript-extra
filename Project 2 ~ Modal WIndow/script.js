@@ -38,4 +38,11 @@ for (let i = 0; i <= btnsOpenModal.length - 1; i++) {
 
     // (CLOSE) Overlay
     overlay.addEventListener("click", closeModal);
+
+    // Keypress Event (Keyboard Press) - Escape Key
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+                closeModal();
+        }
+    });
 }
