@@ -1,6 +1,7 @@
 'use strict';
 
 
+// Hoisting with variables
 // console.log(me);   ~>  Error !!!
 // console.log(job);   ~>  Error !!!
 // console.log(year);   ~>  Error !!!
