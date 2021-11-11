@@ -34,7 +34,8 @@ const addArrow = (a, b) => a + b;
 // Hoisting with functions (VAR)
 console.log(addDec1(3, 5));
 /* console.log(addExpr1(3, 0));   ~>  Error !!!
-console.log(addArrow1(3, 4));   ~>  Error !!! */
+console.log(addArrow1(3, 4));   ~>  Error !!!
+console.log(addArrow1())   ~>  Error !!! */
 
 // Function Declaration 
 function addDec1(a, b) {
