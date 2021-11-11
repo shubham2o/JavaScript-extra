@@ -11,3 +11,6 @@
 var me = "shubham";
 let job = "Teacher";
 const year = 2000;
+
+
+// Hoisting with function
