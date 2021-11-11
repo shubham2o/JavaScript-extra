@@ -1,9 +1,9 @@
 'use strict';
 
 
-console.log(me);
-console.log(job);
-console.log(year);
+// console.log(me);   ~>  Error !!!
+// console.log(job);   ~>  Error !!!
+// console.log(year);   ~>  Error !!!
 
 
 
