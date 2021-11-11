@@ -7,7 +7,7 @@ function calcAge(birthYear) {
 //  console.log(firstName);  ~>  ERROR !!!
 
     function printAge() {
-        const output = `${firstName} ~ You are ${age}, born in ${birthYear}!`;
+        let output = `${firstName} ~ You are ${age}, born in ${birthYear}!`;
         console.log(output);
         console.log(age);
         console.log(millenial);
