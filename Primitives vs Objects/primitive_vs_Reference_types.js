@@ -1,6 +1,6 @@
 "use strict";
 
-// Primitive 
+// Primitive (Primitive Types)
 let age = 30;
 let oldAge = age;
 age = 31;
@@ -9,7 +9,7 @@ console.log(oldAge);
 
 
 
-// Objects
+// Object (Reference Types)
 const me = {
     name : "Shubham",
     age : 30
