@@ -37,3 +37,6 @@ const matilda = {
 };
 matilda.calcAge = shubham.calcAge;
 matilda.calcAge();
+
+const f = shubham.calcAge;
+// f();
