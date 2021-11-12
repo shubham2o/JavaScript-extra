@@ -5,6 +5,7 @@ var firstName = "Matilda";
 const shubham = {
     firstName : "Shubham",
     year : 2000,
+    // Regualar Function
     calcAge : function() {
         console.log(this);
         console.log(2037 - this.year);
