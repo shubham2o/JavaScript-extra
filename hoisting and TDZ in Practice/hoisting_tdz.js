@@ -49,3 +49,12 @@ var addExpr1 = function(a, b) {
 
 // Arrow function expression
 var addArrow1 = (a, b) => a + b;
+
+console.log(undefined);
+if(!numProducts) deleteShoppingCart();
+
+var numProducts = 10;
+
+function deleteShoppingCart() {
+    console.log("All products deleted");
+} 
