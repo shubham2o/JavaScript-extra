@@ -67,3 +67,10 @@ const [starter, mainCourse] = restaurant.order(2, 0);
 console.log(`19> ${starter}`);
 console.log(`20> ${mainCourse}`);
 console.log(`21> ${starter} ${mainCourse}`);
+
+
+
+// Destructuring values from nested array (array inside an array)
+const nested = [2, 4, [5, 6]];
+const [i, , j] = nested;
+console.log(`22> ${i}  ${j}`);
