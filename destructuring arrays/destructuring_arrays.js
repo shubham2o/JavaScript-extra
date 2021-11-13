@@ -17,7 +17,7 @@ const b = arr[1];
 const c = arr[2];
 
 const [x, y, z] = arr;
-console.log(`1> ${x} ${y} ${z}`);
+console.log(`1> ${x}  ${y}  ${z}`);
 
 const [first, second] = restaurant.categories;
 console.log(`2> ${first}`);
@@ -73,4 +73,16 @@ console.log(`21> ${starter} ${mainCourse}`);
 // Destructuring values from nested array (array inside an array)
 const nested = [2, 4, [5, 6]];
 const [i, , j] = nested;
-console.log(`22> ${i}  ${j}`);
+console.log(`22> ${i}`);
+console.log(`23> ${j}`);
+console.log(`24> ${i}  ${j}`);
+
+
+
+// Destructuring inside of destructuring
+const nestedOne = [2, 4, [5, 6]];
+const [p, , [q, r]] = nestedOne;
+console.log(`25> ${p}`);
+console.log(`26> ${q}`);
+console.log(`27> ${r}`);
+console.log(`28> ${p}  ${q}  ${r}`);
