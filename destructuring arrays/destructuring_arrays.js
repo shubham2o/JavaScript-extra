@@ -19,7 +19,7 @@ console.log(`1> ${x} ${y} ${z}`);
 const [first, second] = restaurant.categories;
 console.log(`2> ${first}`);
 console.log(`3> ${second}`);
-console.log(`4> ${first, second}`);
+console.log(`4> ${first} ${second}`);
 
 const [One, , Two] = restaurant.starterMenu;     // Skipped Bruschetta
 console.log(`5> ${One}`);
