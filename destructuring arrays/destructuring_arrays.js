@@ -26,7 +26,12 @@ console.log(`5> ${One}`);
 console.log(`6> ${Two}`);
 console.log(`7> ${One} ${Two}`);
 
+
+
+/* Destructuring through declaring and 
+assigning array values to a variables. */
 let [main, secondary] = restaurant.mainMenu;
+
 console.log(`8> ${main} ${secondary}`);
 const temp = main;
 main = secondary;
@@ -34,3 +39,17 @@ secondary = temp;
 console.log(`9> ${main}`);
 console.log(`10> ${secondary}`);
 console.log(`11> ${main} ${secondary}`);
+
+
+
+/* Other and simple method to destructure  */
+let [one1, two2] = restaurant.categories;
+
+console.log(`12> ${one1}`);
+console.log(`13> ${two2}`);
+console.log(`14> ${one1} ${two2}`);
+
+[one1, two2] = [two2, one1];
+console.log(`15> ${one1}`);
+console.log(`16> ${two2}`);
+console.log(`17> ${one1} ${two2}`);
