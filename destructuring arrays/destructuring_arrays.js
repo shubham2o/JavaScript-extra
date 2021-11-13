@@ -5,7 +5,10 @@ const restaurant = {
     location : "Via Angelo Tavanti 23, Firenze, Italy",
     categories : ["Italian", "Pizzeria", "Vegeterian", "Organic"],
     starterMenu : ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
-    mainMenu : ["Pizza", "Pasta", "Risotto"]
+    mainMenu : ["Pizza", "Pasta", "Risotto"],
+    order : function(starterIndex, mainIndex) {
+        return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+    }
 };
 
 const arr = [2, 3, 4];
@@ -53,3 +56,12 @@ console.log(`14> ${one1} ${two2}`);
 console.log(`15> ${one1}`);
 console.log(`16> ${two2}`);
 console.log(`17> ${one1} ${two2}`);
+
+
+
+// Destructuring values from a function within an array
+console.log(`18> ${restaurant.order(2, 0)}`);
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(`19> ${starter}`);
+console.log(`20> ${mainCourse}`);
+console.log(`21> ${starter} ${mainCourse}`);
