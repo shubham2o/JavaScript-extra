@@ -61,7 +61,9 @@ console.log(`17> ${one1} ${two2}`);
 
 // Destructuring values from a function within an array
 console.log(`18> ${restaurant.order(2, 0)}`);
+
 const [starter, mainCourse] = restaurant.order(2, 0);
+
 console.log(`19> ${starter}`);
 console.log(`20> ${mainCourse}`);
 console.log(`21> ${starter} ${mainCourse}`);
