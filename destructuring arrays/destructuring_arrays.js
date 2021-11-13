@@ -86,3 +86,15 @@ console.log(`25> ${p}`);
 console.log(`26> ${q}`);
 console.log(`27> ${r}`);
 console.log(`28> ${p}  ${q}  ${r}`);
+
+
+
+// Default Values
+const [m = 0, n = 0, o = 0] = [8, 9];
+console.log(`29> ${m}  ${n}  ${o}`);
+
+const [e = 0, f, g] = [8, 9];
+console.log(`30> ${e}  ${f}  ${g}`);
+
+const [t = 0, u = 0, v = 0] = [];
+console.log(`31> ${t}  ${u}  ${v}`);
