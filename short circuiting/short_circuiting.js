@@ -26,9 +26,9 @@ const restaurant = {
     orderDelivery : function ({starterIndex, mainIndex, time, address}) {
         console.log(`Order Received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`);
     },
-};
+};B
 
-
+B
 
 /* OR (||)
 Use ANY data type, return ANY data type
@@ -52,3 +52,4 @@ console.log(guests2);
 
 // AND (&&)
 console.log("======AND======");
+b
