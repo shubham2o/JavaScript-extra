@@ -6,8 +6,8 @@ const question = new Map([
     [2, "Java"],
     [3, "JavaScript"],
     ["correct", 3],
-    [true, "Correct"],
-    [false, "Try Again"],
+    [true, "Correct 🎉"],
+    [false, "Try Again 🔃"],
 ]);
 console.log(`1 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ >`);
 console.log(question);
@@ -33,4 +33,17 @@ for (const [key, value] of question) {
     }
 }
 const answer = Number(prompt("Your Answer"));
-console.log(answer);
+console.log(answer); 
+
+
+
+console.log(`
+4 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ >`);
+console.log(question.get(question.get("correct") === answer));
+
+
+
+// Convert map to an array
+console.log(`
+5 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ >`);
+console.log([...question]);
