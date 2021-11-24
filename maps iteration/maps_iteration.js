@@ -47,3 +47,11 @@ console.log(question.get(question.get("correct") === answer));
 console.log(`
 5 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ >`);
 console.log([...question]);
+
+
+
+console.log(`
+6 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ >`);
+console.log([...question.entries()]);
+console.log([...question.keys()]);
+console.log([...question.values()]);
