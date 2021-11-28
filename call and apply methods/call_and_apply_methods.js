@@ -47,3 +47,11 @@ book.call(swiss, 333, "Jordan Poole");
 console.log(swiss);
 
 // Apply Method
+console.log(`||||||||||||||||||||||||||||||||||||||||||||||||||||||`);
+const flightData = [555, "Kevon Looney"];
+/* book.apply(swiss, flightData)
+   this apply method is not that used anymore in modern javascript */
+
+// Above can also be written as
+book.call(swiss, ...flightData);
+console.log(swiss);
