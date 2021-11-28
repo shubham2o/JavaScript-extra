@@ -10,3 +10,6 @@ const greeterHey = greet("Hey");
 
 greeterHey("Shubham");
 greeterHey("Stephen");
+
+greet("Hi")("Klay");
+greet("Hello")("Dray");
