@@ -23,9 +23,10 @@ const eurowings = {
     bookings : [],
 }
 
-// Does not work
-// book(011, "Klay Thompson");
+/* Does not work
+   book(011, "Klay Thompson"); */
 
+// Call Method
 console.log(`||||||||||||||||||||||||||||||||||||||||||||||||||||||`);
 book.call(eurowings, 111, "Klay Thompson");
 console.log(eurowings);
@@ -44,3 +45,5 @@ console.log(`||||||||||||||||||||||||||||||||||||||||||||||||||||||`);
 book.call(swiss, 222, "Andrew Wiggins");
 book.call(swiss, 333, "Jordan Poole");
 console.log(swiss);
+
+// Apply Method
