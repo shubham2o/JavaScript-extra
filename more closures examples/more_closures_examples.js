@@ -28,3 +28,16 @@ console.log(``);
 
 
 // EXAMPLE 2
+const boardPassengers = function(n, wait) {
+    const perGroup = n / 3;
+
+    setTimeout(function() {
+        console.log(`1 ~> We are now boarding all ${n} passengers.`);
+        console.log(`2 ~> There are 3 groups, each with ${perGroup} passengers.`);
+    }, wait * 1000);
+
+    console.log(`We will start boarding in ${wait} seconds.`)
+};
+
+const perGroup = 1000;
+boardPassengers(180, 3);
