@@ -62,3 +62,56 @@ console.log(``);
 const withdrawals = movements.filter(mov => mov < 0);
 console.log(`8> ` + withdrawals);
 console.log(``);
+
+
+// REDUCE METHOD
+console.log(`9> ` + movements);
+console.log(``);
+
+
+// accumulator -> SNOWBALL
+/* 
+const balance = movements.reduce(function (acc, cur, i, arr) {
+    console.log(`Iteration ${i} : ${acc}`);
+    return acc + cur
+}, 0);
+console.log(`10> ` + balance);
+console.log(``); 
+*/
+const balance = movements.reduce((acc, cur) => acc + cur, 0);
+console.log(`10> ` + balance);
+console.log(``);
+
+
+let balance2 = 0;
+for (const mov of movements) {
+    balance2 += mov;
+}
+console.log(`11> ` + balance2);
+console.log(``);
+
+
+// Maximum Value
+const max = movements.reduce((acc, cur) => {
+    if (acc > cur) {
+        return acc;
+    }
+    else {
+        return cur;
+    }
+}, movements[0]);
+console.log(`12> ` + max);
+console.log(``);
+
+
+// Minimum Value
+const min = movements.reduce((acc, cur) => {
+    if (acc > cur) {
+        return cur;
+    }
+    else {
+        return acc;
+    }
+}, movements[0]);
+console.log(`13> ` + min);
+console.log(``);
