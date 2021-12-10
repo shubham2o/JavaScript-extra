@@ -20,8 +20,8 @@ const Person = function(firstName, birthYear) {
 
 const jonas = new Person("Jonas", 1991);
 const shubham = new Person("Shubham", 2000);
-console.log(jonas, shubham);
-console.log(``);
+// console.log(jonas, shubham);
+// console.log(``);
 
 /*
 1. New {} is created
@@ -32,20 +32,21 @@ console.log(``);
 
 const matilda = new Person("Matilda", 2017);
 const jack = new Person("Jack", 1975);
-console.log(matilda, jack);
-console.log(``);
+// console.log(matilda, jack);
+// console.log(``);
 
-console.log(jonas instanceof Person, shubham instanceof Person, matilda instanceof Person, jack instanceof Person);
-console.log(``);
+// console.log(jonas instanceof Person, shubham instanceof Person, matilda instanceof Person, jack instanceof Person);
+// console.log(``);
 
 const stephen = "Stephen";
-console.log( stephen instanceof Person);
-console.log(``);
+// console.log( stephen instanceof Person);
+// console.log(``);
 
 
 
 // Prototypes
 console.log(Person.prototype);
+console.log(``);
 
 Person.prototype.calcAge = function() {
     console.log(2037 -this.birthYear);
@@ -55,16 +56,20 @@ jonas.calcAge();
 shubham.calcAge();
 matilda.calcAge();
 jack.calcAge();
+console.log(``);
 
 console.log(jonas.__proto__);
 console.log(shubham.__proto__ === Person.prototype);
+console.log(``);
 
 console.log(Person.prototype.isPrototypeOf(jonas));
 console.log(Person.prototype.isPrototypeOf(shubham));
 console.log(Person.prototype.isPrototypeOf(Person));
+console.log(``);
 
 Person.prototype.species = "Homo Sapiens";
 console.log(jonas.species, shubham.species, matilda.species);
+console.log(``);
 
 console.log(jonas.hasOwnProperty('firstName'));
 console.log(jonas.hasOwnProperty('species'));
