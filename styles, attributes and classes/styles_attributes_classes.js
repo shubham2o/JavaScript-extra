@@ -24,6 +24,6 @@ const link = document.querySelector(".twitter-link");
 logo.classList.add();
 logo.classList.remove();
 logo.classList.toggle();
-logo.classList.contains();
+logo.classList.contains();      // not includes
 // Don't use
 logo.className = "shubham";
