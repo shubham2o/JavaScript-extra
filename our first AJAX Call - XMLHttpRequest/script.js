@@ -31,7 +31,6 @@ const getCountryData = function (country) {
 };
 */
 
-
 // Welcome to callback hell
 const btn = document.querySelector(".btn-country");
 const countriesContainer = document.querySelector(".countries");
@@ -101,30 +100,49 @@ setTimeout(() => {
             }, 1000);
         }, 1000);
     }, 1000);
-}, 1000)
-*/
+}, 1000);
 
 
-/* // Consuming Promises
+// Consuming Promises
 const request = fetch(`https://restcountries.com/v2/name/portugal`);
 console.log(request);
-*/
 
 
 const getCountryData = function (country) {
-    fetch(`https://restcountries.com/v2/name/${country}`).then(function (response) {
+    fetch(`https://restcountries.com/v2/name/${country}`)
+    .then(function (response) {
         return response.json();
-    }).then(function (data) {
+    })
+    .then(function (data) {
         renderCountry(data[0]);
     });
 };
 
-/* // Above code in much more simplied manner || Arrow Function
+
+// Above code in much more simplied manner || Arrow Function
 const getCountryData = function (country) {
     fetch(`https://restcountries.com/v2/name/${country}`)
     .then(response => response.json())
     .then(data => renderCountry(data[0]));
 };
 */
+
+// Chaining Promises
+const getCountryData = function (country) {
+    // Country 1
+    fetch(`https://restcountries.com/v2/name/${country}`)
+    .then(response => response.json())
+    .then(data => {
+        renderCountry(data[0]);
+        const neighbour = data[0].borders[0]
+
+        if(!neighbour) return;
+
+        // Country 2
+        return fetch(`https://restcountries.com/v2/alpha/${neighbour}`);
+    })
+    .then(response => response.json())
+    .then(data => renderCountry(data, "neighbour")); 
+};
 
 getCountryData("bharat");
