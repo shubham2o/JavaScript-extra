@@ -86,9 +86,10 @@ const getCountryAndNeighbour = function (country) {
     });
 }; 
 
-getCountryAndNeighbour("bharat");
+// getCountryAndNeighbour("bharat");
 
-// Callback Hell
+
+/* // Callback Hell
 setTimeout(() => {
     console.log(`1 second passed`);
     setTimeout(() => {
@@ -101,3 +102,29 @@ setTimeout(() => {
         }, 1000);
     }, 1000);
 }, 1000)
+*/
+
+
+/* // Consuming Promises
+const request = fetch(`https://restcountries.com/v2/name/portugal`);
+console.log(request);
+*/
+
+
+const getCountryData = function (country) {
+    fetch(`https://restcountries.com/v2/name/${country}`).then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        renderCountry(data[0]);
+    });
+};
+
+/* // Above code in much more simplied manner || Arrow Function
+const getCountryData = function (country) {
+    fetch(`https://restcountries.com/v2/name/${country}`)
+    .then(response => response.json())
+    .then(data => renderCountry(data[0]));
+};
+*/
+
+getCountryData("bharat");
