@@ -271,7 +271,7 @@ Promise
 });
 
 console.log("Test end");
-*/
+
 
 // Building a simple promise
 const lotteryPromise = new Promise(function(resolve, reject) {
@@ -325,3 +325,17 @@ Promise
 Promise
     .reject(new Error("Problem!"))
     .catch(x => console.error(x));
+*/
+
+// Consuming Promises with Async/Await 
+const whereAmI = async function(country) {
+    const {} = await getPosition();
+
+    const res = await fetch(`https://restcountries.com/v2/name/${country}`);
+    const data = await res.json();
+    console.log(data);
+    console.log(data[0]);
+}
+
+whereAmI("bharat");
+console.log("FIRST");
