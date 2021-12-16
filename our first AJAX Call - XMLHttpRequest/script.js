@@ -260,7 +260,9 @@ setTimeout(() =>
     .then(res => console.log(res));
 
 Promise.resolve(`Resolved promise 2`).then(res => {
-    for (let i = 0; )
+    for (let i = 0; i < 10000000; i++) {
+        
+    }
     console.log(res);
 })
 
