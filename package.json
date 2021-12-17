@@ -1,0 +1,22 @@
+{
+  "name": "javascript---extra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubham2o/JavaScript-via-DevDocs.git"
+  },
+  "author": "Shubham Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubham2o/JavaScript-via-DevDocs/issues"
+  },
+  "homepage": "https://github.com/shubham2o/JavaScript-via-DevDocs#readme",
+  "dependencies": {
+    "leaflet": "^1.7.1"
+  }
+}
