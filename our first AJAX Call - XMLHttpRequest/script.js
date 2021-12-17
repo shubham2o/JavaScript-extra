@@ -325,17 +325,43 @@ Promise
 Promise
     .reject(new Error("Problem!"))
     .catch(x => console.error(x));
-*/
+
 
 // Consuming Promises with Async/Await 
 const whereAmI = async function(country) {
-    const {} = await getPosition();
-
     const res = await fetch(`https://restcountries.com/v2/name/${country}`);
     const data = await res.json();
     console.log(data);
-    console.log(data[0]);
-}
+    renderCountry(data[0]);
+};
 
 whereAmI("bharat");
+console.log("FIRST");
+*/
+
+const getPosition = function () {
+    return new Promise(function (resolve, reject) {
+        navigator.geolocation.getCurrentPosition(resolve, reject);
+    });
+};
+
+const whereAmI = async function(country) {
+    // Geolocation 
+    const pos = await getPosition();
+    const {latitude : lat, longitude : lng} = pos.coords;
+
+    // Reverse geocoding
+    const resGeo = await fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`);
+    const dataGeo = await resGeo.json();
+    console.log(dataGeo);
+
+    // Country data
+    // fetch(`https://restcountries.com/v2/name/${country}`).then(res => console.log(res));
+    const res = await fetch(`https://restcountries.com/v2/name/${dataGeo.country}`);
+    const data = await res.json();
+    console.log(data);
+    renderCountry(data[0]);
+};
+
+whereAmI();
 console.log("FIRST");
